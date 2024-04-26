@@ -23,3 +23,18 @@ The child thread forks two communication threads, one for each direction.
 You are not supposed to kill a thread, so it will be in an endless timeout / try to read data loop.
 If one of these sockets die the thread exits, the intermediate controller closes the two sockets, so
 the other directional transport thread dies as well.
+
+# Configuration
+
+## Inverter
+
+ * Variant 1: Fake the DNS entry for the Cloud server the Deye is talking to. You may need to configure the
+   cloud server in the source code, it comes with the factory setting for an Amazon Frankfurt loadbalancer. 
+ * Variant 2: Reconfigure the Deye using the hidden configuration page at /config_hide.html. You might need to
+   change the server in the source code from its factory of an Amazon Frankfurt loadbalancer.
+
+## Code
+
+Just the relevant packets are selected and printed. I need to feed these into a Splunk logger.
+If you set the environment variables DEYE_SPLUNK_HEC_URL and DEYE_SPLUNK_HEC_TOKEN, events will be fed
+into a Splunk index.
