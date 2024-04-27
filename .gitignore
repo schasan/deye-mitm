@@ -1,1 +1,4 @@
 config.json
+.idea/
+__pycache__/
+proxymodules/__pycache__/
