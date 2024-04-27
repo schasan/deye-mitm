@@ -3,6 +3,7 @@ from _thread import *
 import threading
 from proxymodules.deye import Module
 
+
 def xfer(s_from, s_to, direction, lock):
     m = Module()
     print('From socket:', s_from)
@@ -32,6 +33,7 @@ def xfer(s_from, s_to, direction, lock):
             break
     lock.release()
     print(f'Thread {direction} ends.')
+
 
 def controller_thread(server_address, server_port, client):
     continue_lock = threading.Lock()
@@ -65,7 +67,7 @@ def controller_thread(server_address, server_port, client):
     print('Controller thread ends, client socket closed')
 
 
-def Main():
+def main():
     listen_host = "0.0.0.0"
     listen_port = 10000
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -87,4 +89,4 @@ def Main():
 
 
 if __name__ == '__main__':
-    Main()
+    main()
