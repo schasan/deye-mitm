@@ -1,0 +1,4 @@
+{
+  "splunk_url": "https://192.168.5.201:8443/services/collector",
+  "splunk_token": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+}
