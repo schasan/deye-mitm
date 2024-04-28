@@ -32,9 +32,9 @@ the other directional transport thread dies as well.
    cloud server in the source code, it comes with the factory setting for an Amazon Frankfurt loadbalancer. 
  * Variant 2: Reconfigure the Deye using the hidden configuration page at /config_hide.html. You might need to
    change the server in the source code from its factory of an Amazon Frankfurt loadbalancer.
+   ![Hidden configuration page](img/config_hide.png)
 
 ## Code
 
 Just the relevant packets are selected and printed. I need to feed these into a Splunk logger.
-If you set the environment variables DEYE_SPLUNK_HEC_URL and DEYE_SPLUNK_HEC_TOKEN, events will be fed
-into a Splunk index.
+Configuration is in the optional file `config.json`.
