@@ -7,7 +7,7 @@ The Deye SUN-M80G3-EU-Q0 somehow sucks: I do not have all truth and all details,
 in the inverter, which is required due to German regulations (which also do suck).
 
 As a consequence they provided an external relay. This connects to the Modbus port of the inverter and every single
-usefull poll operation is blocked. Nothing on 8899 or 48899 for me on the recent firmware.
+useful poll operation is blocked. Nothing on 8899 or 48899 for me on the recent firmware.
 
 So I am using their Amazon cloud communication to have my own monitoring and logging active and still have their
 cloud capabilities operative.
