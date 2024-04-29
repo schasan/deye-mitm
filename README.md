@@ -1,6 +1,18 @@
 # deye-mithm
-Man in the middle tracer of traffic between Deye inverter and AWS cloud
+Man in the middle tracer of traffic between Deye inverter and AWS cloud.
 
+## Motivation
+
+The Deye SUN-M80G3-EU-Q0 somehow sucks: I do not have all truth and all details, but it seems they skipped a cutoff relay
+in the inverter, which is required due to German regulations (which also do suck).
+
+As a consequence the provided an external relay. This connects to the Modbus port of the inverter and every single
+useful poll operation is blocked. Nothing on 8899 or 48899 for me on the recent firmware.
+
+So I am using their Amazon cloud communication to have my own monitoring and logging active and still have their
+cloud capabilities operative.
+
+So it might be useful of other devices as well, but the drawback is that we are looking at biary, undocumented communication.
 
 ## Sources
 
