@@ -30,7 +30,7 @@ to my own logger, which is a Splunk HEC (http Event Collector). The original pro
 Provides the idea how to implement a proxy, however that thing may get berserk in the communication
 between Inverter and Cloud (an Amazon TCP load balancer) from time to time for unknown reasons.
 Maybe this is caused by improper handling of socket close reset packets received.
-I tried to reimplement it, not to nice in terms of the modules, but maybe better in terms of state handlicng.
+I tried to reimplement it, not to nice in terms of the modules, but maybe better in terms of state handling.
 A master listens on a port, on incoming connection a child thread is created.
 The child thread forks two communication threads, one for each direction.
 You are not supposed to kill a thread, so it will be in an endless timeout / try to read data loop.
