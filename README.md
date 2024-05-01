@@ -19,13 +19,13 @@ The drawback is that we are looking at binary, undocumented communication.
 
 This is a modified mixture of two Github repositories.
 
-## https://github.com/Hypfer/deye-microinverter-cloud-free
+### https://github.com/Hypfer/deye-microinverter-cloud-free
 
 Provides the idea how to interpret the binary data sent into the Amazon cloud.
 However I want no keep the cloud connectivity, just tee the packets and replicate them
 to my own logger, which is a Splunk HEC (http Event Collector). The original provides a dummy server.
 
-## https://github.com/ickerwx/tcpproxy
+### https://github.com/ickerwx/tcpproxy
 
 Provides the idea how to implement a proxy, however that thing may get berserk in the communication
 between Inverter and Cloud (an Amazon TCP load balancer) from time to time for unknown reasons.
