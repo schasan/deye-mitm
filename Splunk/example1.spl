@@ -1,0 +1,6 @@
+index=deye
+| eval kW='grid.i' * 'grid.v' / 1000
+| eval _time=strptime('meta.current_time', "%Y-%m-%d:%H:%M:%S")
+| eval aW='grid.active_power_w' / 1000
+| eval Grad=if('inv.degc'>150, 0, 'inv.degc')
+| timechart avg(Grad) as °C avg(aW) as kW span=5m
