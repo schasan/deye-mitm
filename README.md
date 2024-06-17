@@ -22,7 +22,7 @@ This is a modified mixture of two Github repositories.
 ### https://github.com/Hypfer/deye-microinverter-cloud-free
 
 Provides the idea how to interpret the binary data sent into the Amazon cloud.
-However I want no keep the cloud connectivity, just tee the packets and replicate them
+However I want to keep the cloud connectivity, just tee the packets and replicate them
 to my own logger, which is a Splunk HEC (http Event Collector). The original provides a dummy server.
 
 ### https://github.com/ickerwx/tcpproxy
