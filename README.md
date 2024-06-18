@@ -44,7 +44,7 @@ the other directional transport thread dies as well.
  * Variant 1: Fake the DNS entry for the Cloud server the Deye is talking to. You may need to configure the
    cloud server in the source code, it comes with the factory setting for an Amazon Frankfurt loadbalancer. 
  * Variant 2: Reconfigure the Deye using the hidden configuration page at /config_hide.html. You might need to
-   change the server in the source code from its factory of an Amazon Frankfurt loadbalancer.
+   change the server in the source code from its factory setting of an Amazon Frankfurt loadbalancer.
    ![Hidden configuration page](img/config_hide.png)
 
 ## Code
